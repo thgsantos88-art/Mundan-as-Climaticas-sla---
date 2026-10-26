@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gota a Gota — Água, clima e o nosso consumo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <header class="topo">
+        <a href="#inicio" class="marca">
+            <span class="marca__gota" aria-hidden="true"></span> Gota a Gota
+        </a>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#crise">A crise</a></li>
+                <li><a href="#casa">Em casa</a></li>
+                <li><a href="#invisivel">Água invisível</a></li>
+                <li><a href="#acoes">O que fazer</a></li>
+                <li><a href="#compromisso" class="botao botao--pequeno">Compromisso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero__conteudo">
+                <p class="sobretitulo">Mudanças climáticas &amp; recursos hídricos</p>
+                <h1>A água que desperdiçamos hoje é a seca de <em>amanhã</em>.</h1>
+                <p class="hero__texto">
+                    O aquecimento global está mudando onde, quando e quanto chove. Secas mais longas, rios mais baixos e reservatórios vazios já fazem parte da nossa realidade. Cuidar de cada gota é uma das formas mais diretas de enfrentar a crise climática.
+                </p>
+                <div class="hero__acoes">
+                    <a href="#crise" class="botao">Entenda o problema</a>
+                    <a href="#acoes" class="botao botao--fantasma">Comece a economizar</a>
+                </div>
+            </div>
+            <aside class="hero__copo" aria-label="Distribuição da água do planeta">
+                <div class="copo">
+                    <div class="copo__agua"></div>
+                    <div class="copo__doce"></div>
+                </div>
+                <dl class="copo__legenda">
+                    <div><dt>97,5%</dt><dd>é água salgada</dd></div>
+                    <div><dt>2,5%</dt><dd>é água doce</dd></div>
+                    <div><dt>&lt; 1%</dt><dd>está acessível para consumo</dd></div>
+                </dl>
+            </aside>
+            <div class="ondas" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,64 C240,120 480,0 720,48 C960,96 1200,24 1440,64 L1440,120 L0,120 Z"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- A CRISE -->
+        <section id="crise" class="secao secao--clara">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <p class="sobretitulo">01 — A crise</p>
+                    <h2>Clima e água são a mesma história</h2>
+                    <p>
+                        Quando o planeta aquece, o ciclo da água se intensifica: evapora mais, chove de forma mais irregular e os extremos ficam mais frequentes. Enchentes em um lugar, secas severas em outro.
+                    </p>
+                </header>
+                <div class="numeros">
+                    <article class="numero">
+                        <span class="numero__valor">2,2 bi</span>
+                        <p>de pessoas no mundo ainda não têm acesso a água potável gerenciada com segurança.</p>
+                    </article>
+                    <article class="numero">
+                        <span class="numero__valor">70%</span>
+                        <p>da água doce retirada no planeta vai para a agricultura — ou seja, para a nossa comida.</p>
+                    </article>
+                    <article class="numero">
+                        <span class="numero__valor">~37%</span>
+                        <p>da água tratada no Brasil se perde na distribuição, por vazamentos e ligações irregulares.</p>
+                    </article>
+                    <article class="numero">
+                        <span class="numero__valor">2050</span>
+                        <p>até lá, a demanda global por água pode crescer cerca de 20% a 30%, segundo a ONU.</p>
+                    </article>
+                </div>
+                <div class="ciclo">
+                    <h3>Como o aquecimento afeta a água</h3>
+                    <ol class="ciclo__lista">
+                        <li>
+                            <span class="ciclo__icone" aria-hidden="true">☀️</span>
+                            <h4>Mais calor</h4>
+                            <p>Temperaturas maiores aumentam a evaporação de rios, lagos e do solo.</p>
+                        </li>
+                        <li>
+                            <span class="ciclo__icone" aria-hidden="true">🌧️</span>
+                            <h4>Chuva irregular</h4>
+                            <p>A chuva se concentra em eventos extremos, que o solo não consegue absorver.</p>
+                        </li>
+                        <li>
+                            <span class="ciclo__icone" aria-hidden="true">🏜️</span>
+                            <h4>Secas longas</h4>
+                            <p>Reservatórios baixam, a agricultura sofre e a energia hidrelétrica fica mais cara.</p>
+                        </li>
+                        <li>
+                            <span class="ciclo__icone" aria-hidden="true">🔁</span>
+                            <h4>Ciclo vicioso</h4>
+                            <p>Tratar e bombear água gasta energia — desperdiçar água também é emitir carbono.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- EM CASA -->
+        <section id="casa" class="secao secao--escura">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <p class="sobretitulo">02 — Em casa</p>
+                    <h2>Para onde vai a água da sua torneira</h2>
+                    <p>Pequenos hábitos do dia a dia somam centenas de litros. Compare o gasto comum com o gasto consciente.</p>
+                </header>
+                <div class="comparativo">
+                    <article class="habito">
+                        <h3>Banho de 15 minutos</h3>
+                        <div class="barra"><span class="barra__preenchimento" style="--v: 100%">135 L</span></div>
+                        <p class="habito__alternativa">Banho de 5 minutos</p>
+                        <div class="barra barra--bom"><span class="barra__preenchimento" style="--v: 33%">45 L</span></div>
+                    </article>
+                    <article class="habito">
+                        <h3>Lavar o carro com mangueira (30 min)</h3>
+                        <div class="barra"><span class="barra__preenchimento" style="--v: 100%">560 L</span></div>
+                        <p class="habito__alternativa">Com balde e pano</p>
+                        <div class="barra barra--bom"><span class="barra__preenchimento" style="--v: 7%">40 L</span></div>
+                    </article>
+                    <article class="habito">
+                        <h3>Lavar louça com a torneira aberta (15 min)</h3>
+                        <div class="barra"><span class="barra__preenchimento" style="--v: 100%">117 L</span></div>
+                        <p class="habito__alternativa">Ensaboar com a torneira fechada</p>
+                        <div class="barra barra--bom"><span class="barra__preenchimento" style="--v: 17%">20 L</span></div>
+                    </article>
+                    <article class="habito">
+                        <h3>Escovar os dentes com a torneira aberta (5 min)</h3>
+                        <div class="barra"><span class="barra__preenchimento" style="--v: 100%">12 L</span></div>
+                        <p class="habito__alternativa">Usando um copo</p>
+                        <div class="barra barra--bom"><span class="barra__preenchimento" style="--v: 8%">1 L</span></div>
+                    </article>
+                </div>
+                <div class="alerta">
+                    <span class="alerta__gota" aria-hidden="true"></span>
+                    <p>
+                        <strong>Uma torneira pingando</strong> pode desperdiçar mais de <strong>40 litros por dia</strong> — mais de 14 mil litros por ano. Um vazamento no vaso sanitário pode perder ainda mais, sem fazer barulho.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ÁGUA INVISÍVEL -->
+        <section id="invisivel" class="secao secao--areia">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <p class="sobretitulo">03 — Água invisível</p>
+                    <h2>A maior parte da água que usamos não sai da torneira</h2>
+                    <p>
+                        Tudo o que compramos precisou de água para ser produzido. É a chamada <em>pegada hídrica</em>. Repensar o consumo é tão importante quanto fechar a torneira.
+                    </p>
+                </header>
+                <ul class="pegadas">
+                    <li class="pegada">
+                        <span class="pegada__emoji" aria-hidden="true">☕</span>
+                        <div class="pegada__info">
+                            <span class="pegada__litros">140 L</span>
+                            <span class="pegada__item">1 xícara de café</span>
+                        </div>
+                    </li>
+                    <li class="pegada">
+                        <span class="pegada__emoji" aria-hidden="true">🍞</span>
+                        <div class="pegada__info">
+                            <span class="pegada__litros">1.600 L</span>
+                            <span class="pegada__item">1 kg de pão</span>
+                        </div>
+                    </li>
+                    <li class="pegada">
+                        <span class="pegada__emoji" aria-hidden="true">👕</span>
