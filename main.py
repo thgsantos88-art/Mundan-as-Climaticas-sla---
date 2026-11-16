@@ -1,5 +1,3 @@
-#-----------------------------🌊-Mudanças--Climáticas--ÁGUA E O CONSUMO-🌎------------------------------------
-
 from pathlib import Path
 from flask import Flask, render_template
 import shutil
