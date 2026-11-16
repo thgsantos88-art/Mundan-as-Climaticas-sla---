@@ -463,8 +463,10 @@ a {
 }
 
 .pegada__item {
-  font-size: 1rem;
-  color: #666;
+    display: block;
+    color: #333;
+    font-size: 14px;
+    visibility: visible;
 }
 
 .pegada--destaque {
